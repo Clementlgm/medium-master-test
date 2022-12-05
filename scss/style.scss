@@ -38,27 +38,29 @@
 
     ul {
       display: flex;
+      align-items: center;
 
       @include oppo {
         flex-direction: column;
       }
 
       li {
-        display: flex;
+        text-align: center;
 
         @include oppo {
-          flex: 1;
+          min-width: 100%;
           padding: 0.2rem;
         }
 
         a {
+          display: flex;
+          align-items: center;
           font-size: 1.6rem;
           padding: 1rem;
           color: var(--gray-hint);
           font-weight: 500;
 
           @include oppo {
-            flex: 1;
             border-bottom: 1px solid var(--gray);
             display: flex;
             justify-content: center;
@@ -77,7 +79,6 @@
           border: 1px solid var(--primary);
           border-radius: 1rem;
           color: var(--primary);
-          margin-left: 1rem;
 
           @include oppo {
             display: none;
@@ -144,10 +145,11 @@ article {
     grid-template-columns: auto;
   }
 
-  .block-5 {
-    display: none;
+  @include oppo {
+    .block-5 {
+      display: none;
+    }
   }
-
   div {
     display: flex;
     flex-direction: column;

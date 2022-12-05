@@ -20,15 +20,15 @@
       <header>
         <h2>LE JOURNAL DU LUNDI</h2>
         <ul>
-          <li><a href="#">Devenir membre</a></li>
+          <li><a href="#main">Devenir membre</a></li>
           <li><a href="#" class="primary">Connexion</a></li>
           <li><a href="#" class="inscription">Inscription</a></li>
         </ul>
       </header>
       <nav>
         <ul>
-          <li><a href="#">TECH</a></li>
-          <li><a href="#">MODE</a></li>
+          <li><a href="#tech">TECH</a></li>
+          <li><a href="#mode">MODE</a></li>
           <li><a href="#">POLITIQUE</a></li>
           <li><a href="#">SOCIAL</a></li>
           <li><a href="#">BOUTIQUE</a></li>
@@ -103,7 +103,7 @@
         </div>
       </article>
       <hr />
-      <main>
+      <main id="main">
         <img src="/img/ads.png" alt="ads" />
         <div></div>
         <div class="text-contact">
@@ -112,16 +112,16 @@
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas,
             doloremque?
           </p>
-          <form action="#">
-            <input type="text" name="Email" placeholder="Adresse Email" />
-            <button>Inscription</button>
+          <form name="contact" netlify>
+            <input type="email" name="Email" placeholder="Adresse Email" />
+            <button type="submit">Inscription</button>
           </form>
         </div>
         <div></div>
       </main>
       <section class="tech-mode-pop">
         <div class="tech-mode">
-          <h3>Technologie</h3>
+          <h3 id="tech">Technologie</h3>
           <div class="all">
             <div class="text-all">
               <h4>Lorem ipsum dolor sit amet.</h4>
@@ -170,7 +170,7 @@
             </div>
             <img src="/img/bloc-8.jpeg" alt="microsof" />
           </div>
-          <h3>Mode</h3>
+          <h3 id="mode">Mode</h3>
           <div class="all">
             <div class="text-all">
               <h4>Lorem ipsum dolor sit amet.</h4>
