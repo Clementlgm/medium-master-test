@@ -1,0 +1,407 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* general */
+:root {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-size: 1.6rem;
+  color: var(--gray-hint);
+  opacity: 0.9;
+}
+
+h4 {
+  font-size: 1.8rem;
+  padding-bottom: 2rem;
+  color: var(--gray-hint);
+}
+
+.text-gray {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: var(--secondary);
+}
+
+.text-date {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.star {
+  display: grid;
+  grid-template-columns: auto auto;
+  place-items: center;
+  place-content: start;
+}
+.star .text-date {
+  padding: 1rem 0 1rem;
+}
+.star i {
+  padding-left: 1rem 0 1rem;
+  margin-left: 1rem;
+  font-size: 1rem;
+  color: var(--gray-hint);
+}
+
+/* variables */
+:root {
+  --primary: #be2529;
+  --dark: #333;
+  --secondary: #0d0d0d;
+  --gray: #ddd;
+  --gray-light: #eee;
+  --gray-hint: #555;
+  --white: #fff;
+}
+
+/* Oppo A9 2020 */
+.container {
+  max-width: 110rem;
+  margin: auto;
+}
+@media screen and (max-width: 756px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+.container header {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 756px) {
+  .container header {
+    flex-direction: column;
+  }
+}
+.container header h2 {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 2rem;
+  padding-left: 0;
+  color: var(--dark);
+}
+@media screen and (max-width: 756px) {
+  .container header h2 {
+    font-size: 2.5rem;
+    margin: auto;
+    padding: 2rem 0 0.2rem 0;
+  }
+}
+.container header ul {
+  display: flex;
+}
+@media screen and (max-width: 756px) {
+  .container header ul {
+    flex-direction: column;
+  }
+}
+.container header ul li {
+  display: flex;
+}
+@media screen and (max-width: 756px) {
+  .container header ul li {
+    flex: 1;
+    padding: 0.2rem;
+  }
+}
+.container header ul li a {
+  font-size: 1.6rem;
+  padding: 1rem;
+  color: var(--gray-hint);
+  font-weight: 500;
+}
+@media screen and (max-width: 756px) {
+  .container header ul li a {
+    flex: 1;
+    border-bottom: 1px solid var(--gray);
+    display: flex;
+    justify-content: center;
+  }
+}
+.container header ul li a:hover {
+  opacity: 0.75;
+}
+.container header ul li .primary {
+  color: var(--primary);
+}
+.container header ul li .inscription {
+  border: 1px solid var(--primary);
+  border-radius: 1rem;
+  color: var(--primary);
+  margin-left: 1rem;
+}
+@media screen and (max-width: 756px) {
+  .container header ul li .inscription {
+    display: none;
+  }
+}
+.container header ul li .inscription:hover {
+  color: var(--white);
+  background: var(--primary);
+  transition-duration: 0.25s;
+  opacity: 1;
+}
+
+nav {
+  position: sticky;
+  top: 0rem;
+  background: var(--white);
+  z-index: 1;
+}
+@media screen and (max-width: 756px) {
+  nav {
+    overflow: hidden;
+  }
+}
+nav ul {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 756px) {
+  nav ul {
+    justify-content: space-between;
+  }
+}
+nav ul li a {
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 756px) {
+  nav ul li a {
+    padding: 0 1rem;
+  }
+}
+nav ul li a:hover {
+  opacity: 0.75;
+  transition-duration: 0.25s;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+@media screen and (max-width: 756px) {
+  article {
+    grid-template-columns: auto;
+  }
+}
+article .block-5 {
+  display: none;
+}
+article div {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 756px) {
+  article div {
+    padding: 0;
+  }
+}
+article div img {
+  width: 366.66px;
+  padding: 2rem 0 2rem 0;
+}
+@media screen and (max-width: 756px) {
+  article div img {
+    max-width: 340px;
+  }
+}
+article .block-center {
+  padding-top: 2rem;
+}
+@media screen and (max-width: 756px) {
+  article .block-center {
+    padding: 0;
+  }
+}
+article .block-center .block-title {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+@media screen and (max-width: 756px) {
+  article .block-center .block-title {
+    padding-top: 2rem;
+  }
+}
+article .block-center .block-title img {
+  padding-top: 0;
+  width: 8rem;
+}
+article .block-center .block-title h4 {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-weight: 400;
+}
+
+hr {
+  margin: 2rem 0;
+  border: 0;
+  border-bottom: 1px solid var(--gray);
+}
+
+main {
+  height: 25vh;
+  background: var(--gray);
+  display: flex;
+}
+@media screen and (max-width: 756px) {
+  main img {
+    display: none;
+  }
+}
+main div {
+  flex: 1;
+}
+@media screen and (max-width: 756px) {
+  main div {
+    display: none;
+  }
+}
+main .text-contact {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 756px) {
+  main .text-contact {
+    margin-left: 1rem;
+  }
+}
+main .text-contact h1 {
+  font-size: 3.5rem;
+  color: var(--dark);
+}
+@media screen and (max-width: 756px) {
+  main .text-contact h1 {
+    font-size: 1.8rem;
+  }
+}
+main .text-contact p {
+  font-size: 1.6rem;
+  color: var(--gray-hint);
+  margin: 2rem 0;
+}
+@media screen and (max-width: 756px) {
+  main .text-contact p {
+    font-size: 1.6rem;
+  }
+}
+main .text-contact input {
+  border: 0;
+  border-bottom: 1px solid var(--dark);
+  background: var(--gray);
+  line-height: 3rem;
+  outline: none;
+}
+main .text-contact ::placeholder {
+  color: var(--dark);
+}
+main .text-contact button {
+  margin-left: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  background: var(--dark);
+  border: 1px solid var(--dark);
+  color: var(--white);
+}
+main .text-contact button:hover {
+  background: var(--white);
+  color: var(--dark);
+}
+
+section {
+  display: flex;
+}
+section .tech-mode {
+  max-width: 800px;
+}
+section .tech-mode h3 {
+  font-size: 2.5rem;
+  color: var(--dark);
+  font-weight: 500;
+  padding: 2rem 0 1rem 0;
+  border-bottom: 1px solid var(--gray);
+}
+section .tech-mode .all {
+  display: flex;
+}
+section .tech-mode .all img {
+  width: 80px;
+  height: 80px;
+  margin-top: 2rem;
+}
+section .tech-mode .text-all {
+  margin-right: 2rem;
+}
+section .tech-mode .text-all h4 {
+  margin-top: 2rem;
+  padding: 0;
+}
+@media screen and (max-width: 756px) {
+  section .tech-mode .text-all h4 {
+    padding-bottom: 1rem;
+  }
+}
+section .tech-mode .text-all .text-gray {
+  color: var(--secondary);
+  padding-bottom: 0;
+}
+section .tech-mode .text-all .text-date {
+  font-size: 1rem;
+}
+section .populaires {
+  position: sticky;
+  top: 74px;
+  margin-left: 2rem;
+}
+@media screen and (max-width: 756px) {
+  section .populaires {
+    display: none;
+  }
+}
+section .populaires h3 {
+  font-size: 2.5rem;
+  color: var(--dark);
+  font-weight: 500;
+  padding: 2rem 0 1rem 0;
+  border-bottom: 1px solid var(--gray);
+  margin-bottom: 2rem;
+}
+section .populaires .pop-all {
+  display: flex;
+  margin-bottom: 2rem;
+}
+section .populaires .pop-all strong {
+  flex: 1;
+  text-align: center;
+  font-size: 3rem;
+  color: var(--gray-hint);
+  padding: 1rem;
+}
+section .populaires .pop-all .pop-text {
+  flex: 4;
+}
+section .populaires .pop-all .pop-text h4 {
+  padding-bottom: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

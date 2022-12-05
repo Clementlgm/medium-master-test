@@ -1,0 +1,7 @@
+/* Oppo A9 2020 */
+
+@mixin oppo {
+  @media screen and (max-width: 756px) {
+    @content;
+  }
+}
